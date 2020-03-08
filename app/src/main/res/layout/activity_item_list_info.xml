@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+        <TextView
+            android:id="@+id/gs_action_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:text="Stock Item List"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity_title_text_size"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_border"
+        android:elevation="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!--<Button-->
+            <!--style="Widget.AppCompat.Button.Colored"-->
+            <!--android:id="@+id/gs_done_bn"-->
+            <!--android:layout_margin="@dimen/saa_button_margin_hor"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:gravity="center"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/menu_title_text_size"-->
+            <!--android:text="Done"-->
+            <!--android:background="@color/colorButtonAmber"-->
+            <!--android:elevation="10dp"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gs_no_of_items"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size2"
+            android:text="No of Items"
+            android:background="@drawable/rectangle_border_fill50"/>
+
+        <TextView
+            android:id="@+id/gs_no_of_items_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size2"
+            android:background="@drawable/rectangle_border"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <view
+        android:id="@+id/item_list_view"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_margin="8dp"
+        android:elevation="5dp"
+        android:layout_centerInParent="true" />
+
+</LinearLayout>

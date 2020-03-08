@@ -1,0 +1,137 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_border"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+        <!--*********************************************************-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rm_collected_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Collected Amont"
+            android:background="@drawable/rectangle_border_fill100"
+            android:elevation="2dp"/>
+        </LinearLayout>
+
+        <!--@@@@@@@@@@@@@@@@@@-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rm_total_collected_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Total"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rm_total_paid_collected_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Total Paid"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rm_current_collected_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Current"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+        </LinearLayout>
+
+        <!--@@@@@@@@@@@@@@@@@@-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rm_total_collected_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rm_total_paid_collected_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rm_current_collected_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

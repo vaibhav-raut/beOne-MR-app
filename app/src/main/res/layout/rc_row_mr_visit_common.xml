@@ -1,0 +1,524 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_border"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+        <!--*********************************************************-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Stock"
+            android:background="@drawable/rectangle_border_fill100"
+            android:elevation="2dp"/>
+        </LinearLayout>
+
+        <!--*********************************************************-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_given_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Given"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_return_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Returned"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_sold_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Sold"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        </LinearLayout>
+
+        <!--@@@@@@@@@@@@@@@@@@-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_given_stock_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_return_stock_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_sold_stock_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        </LinearLayout>
+
+        <!--*********************************************************-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_sold_stock_discount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Sold Discounted"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_opening_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Opening"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_closing_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Closing"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        </LinearLayout>
+
+        <!--@@@@@@@@@@@@@@@@@@-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_sold_stock_discount_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_opening_stock_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_closing_stock_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        </LinearLayout>
+
+        <!--*********************************************************-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_balance_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Balance Amount"
+            android:background="@drawable/rectangle_border_fill100"
+            android:elevation="2dp"/>
+        </LinearLayout>
+
+        <!--@@@@@@@@@@@@@@@@@@-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_opening_balance_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Opening"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_new_balance_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="New"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_paid_balance_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Paid"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_closing_balance_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Closing"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+        </LinearLayout>
+
+        <!--@@@@@@@@@@@@@@@@@@-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_opening_balance_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_new_balance_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_paid_balance_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_closing_balance_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+        </LinearLayout>
+
+        <!--*********************************************************-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_outstanding_sold_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Outstanding Sold Amount"
+            android:background="@drawable/rectangle_border_fill100"
+            android:elevation="2dp"/>
+        </LinearLayout>
+
+        <!--@@@@@@@@@@@@@@@@@@-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_opening_outstanding_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Opening"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_sold_pending_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="New Sold"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_sold_paid_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Paid"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_closing_outstanding_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Closing"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+        </LinearLayout>
+
+        <!--@@@@@@@@@@@@@@@@@@-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rv_opening_outstanding_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_sold_pending_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_sold_paid_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rv_closing_outstanding_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+        </LinearLayout>
+
+        <!--@@@@@@@@@@@@@@@@@@-->
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:elevation="5dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/activity_title_text_size"
+        android:text="Select Member"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:elevation="20dp"/>
+
+    <view
+        android:id="@+id/member_list_view"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_margin="4dp"
+        android:layout_centerInParent="true" />
+</LinearLayout>

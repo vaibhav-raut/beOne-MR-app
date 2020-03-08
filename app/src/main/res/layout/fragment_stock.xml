@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="udaan.beone.mrpoint.activity.fragment.StockFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/t_total_no_t"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size2"
+                android:text="Total No"
+                android:background="@drawable/rectangle_border_fill50" />
+
+            <TextView
+                android:id="@+id/t_total_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size2"
+                android:background="@drawable/rectangle_border"/>
+
+            <TextView
+                android:id="@+id/t_total_wsp_t"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size2"
+                android:text="Total WSP"
+                android:background="@drawable/rectangle_border_fill50"/>
+
+            <TextView
+                android:id="@+id/t_total_wsp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size2"
+                android:background="@drawable/rectangle_border"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:elevation="20dp" />
+
+        <view
+            android:id="@+id/stock_view"
+            class="android.support.v7.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_centerInParent="true" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,492 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="udaan.beone.mrpoint.activity.fragment.MrAccountFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_border"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <!--*********************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_from"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="From"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="To"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_visits_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="No"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_avg_duration_min"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Avg Min"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--@@@@@@@@@@@@@@@@@@-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_from_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_to_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_visits_no_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_avg_duration_min_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--*********************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_given"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Given"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_return"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Return"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_sold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Sold"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_stock"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Stock"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--@@@@@@@@@@@@@@@@@@-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_given_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_return_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_sold_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_stock_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--*********************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_auth_1"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_auth_given"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Auth Given"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_auth_return"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Auth Return"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_auth_sold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Auth Sold"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--*********************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_auth_2"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_auth_given_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_auth_return_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_auth_sold_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--*********************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_auth_collection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Auth Collection"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_auth_paid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Paid"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_auth_balance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Balance"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--@@@@@@@@@@@@@@@@@@-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_auth_collection_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_auth_paid_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_auth_balance_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_db"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+            <!--*********************************************************-->
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:elevation="10dp" />
+
+            <view
+                android:id="@+id/mr_account_view"
+                class="android.support.v7.widget.RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rectangle_border"
+                android:elevation="2dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

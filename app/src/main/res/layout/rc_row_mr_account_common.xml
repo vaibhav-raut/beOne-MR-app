@@ -1,0 +1,437 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_border"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <!--*********************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_role"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill100"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Role"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill100"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Status"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill100"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Type"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+            </LinearLayout>
+
+            <!--@@@@@@@@@@@@@@@@@@-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_role_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_status_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_type_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--*********************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_sold_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill100"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Sold Amount"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill100"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Current Stock"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--@@@@@@@@@@@@@@@@@@-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_sold_amount_paid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Paid"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_sold_amount_pending"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Pending"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_am"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Amount"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="No"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--@@@@@@@@@@@@@@@@@@-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_sold_amount_paid_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_sold_amount_pending_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_am_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_no_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--*********************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_current_stock_discount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill100"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Current Stock Discount"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_unsettled"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill100"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Current Stock Unsettled"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--@@@@@@@@@@@@@@@@@@-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_current_stock_discount_am"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Amount"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_discount_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="No"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_unsettled_am"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="Amount"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_unsettled_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_fill50"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="No"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+
+            <!--@@@@@@@@@@@@@@@@@@-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rc_current_stock_discount_am_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_discount_no_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_unsettled_am_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+                <TextView
+                    android:id="@+id/rc_current_stock_unsettled_no_v"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/data_table_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
